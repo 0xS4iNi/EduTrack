@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagannath Teacher-Login</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+  <!-- College Name  -->
+  <div class="flex flex-col items-center justify-center min-h-screen">
+
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-wide whitespace-nowrap mb-8 text-center">
+      Jagannath University 
+      <div class="mt-2">
+        Haryana
+      </div>
+    </h1>
+
+    <!-- Login Form -->
+    <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-6 sm:p-10 rounded-lg shadow-lg w-80 sm:w-96">
+      <form>
+        <!-- Teacher Name -->
+        <label for="teacherName" class="block text-white mb-2 text-lg font-semibold">Enter Your Name</label>
+        <input type="text" id="teacherName" placeholder="e.g., Dr.Pankaj" required
+          class="w-full mb-4 p-2 rounded-md bg-gray-800 text-white placeholder-gray-400">
+
+        <!-- Teacher Id -->
+        <label for="teacherId" class="block text-white mb-2 text-lg font-semibold">Enter Your ID</label>
+        <input type="text" id="teacherId" placeholder="e.g., T12345" required
+          class="w-full mb-4 p-2 rounded-md bg-gray-800 text-white placeholder-gray-400">
+
+        <!-- Branch Dropdown -->
+        <label for="branch" class="block text-white mb-2 text-lg font-semibold">Branch</label>
+        <select id="branch" required class="w-full mb-4 p-2 rounded-md bg-gray-800 text-white placeholder-gray-400">
+          <option value="" disabled selected>Select a Branch</option>
+          <option value="Paramedical">Paramedical</option>
+          <option value="B.Pharmacy">B.Pharmacy</option>
+          <option value="LLB">LLB</option>
+          <option value="B.Com">B.Com</option>
+          <option value="B.Tech">B.Tech</option>
+        </select>
+
+        <!-- Semester  -->
+        <label for="semester" class="block text-white mb-2 text-lg font-semibold">Semester</label>
+        <input type="text" id="semester" placeholder="e.g., 3 or 4" required
+          class="w-full mb-4 p-2 rounded-md bg-gray-800 text-white placeholder-gray-400">
+
+        <!-- Submit Btn -->
+        <button type="submit" class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-all">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
