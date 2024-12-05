@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button {
+            background: linear-gradient(to right, #FF5722, #FFC107);
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #E64A19, #FFB300);
+            transform: scale(1.05);
+        }
+
+        .mention {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: linear-gradient(to right, #FF5722, #FFC107);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 0.875rem;
+            font-weight: medium;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-gray-200">
+
+    <div class="flex flex-col justify-center items-center min-h-screen px-4">
+        <!-- University Name -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-wide text-center mb-6">
+            Jagannath University
+          </h1>
+      
+          <!-- Subtext for Haryana -->
+          <div class="text-xl sm:text-2xl text-gray-400 italic tracking-wider mt-2 mb-5">
+            Haryana
+          </div>
+
+        <!-- Form Container -->
+        <div class="bg-gray-800 p-6 sm:p-10 rounded-lg shadow-xl w-full max-w-md">
+            <h1 class="text-3xl font-bold text-center text-white mb-6">
+                Admin Login
+            </h1>
+
+            <form onsubmit="return validateCaptcha()">
+                <!-- User Name -->
+                <label for="userName" class="block text-gray-300 font-medium mb-2">Username</label>
+                <input type="text" id="userName" name="userName" required
+                    class="w-full mb-4 p-3 rounded-md bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:ring focus:ring-orange-500">
+
+                <!-- Password -->
+                <label for="passwd" class="block text-gray-300 font-medium mb-2">Password</label>
+                <input type="password" id="passwd" name="passwd" required
+                    class="w-full mb-4 p-3 rounded-md bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:ring focus:ring-orange-500">
+
+                <!-- CAPTCHA -->
+                <label for="captcha" class="block text-gray-300 font-medium mb-2">CAPTCHA</label>
+                <div class="flex items-center justify-between mb-4">
+                    <span id="captcha-display" class="text-lg font-bold text-orange-400"></span>
+                    <input type="hidden" id="captcha-result">
+                </div>
+                <input type="text" id="captcha-input" placeholder="Enter the result" required
+                    class="w-full p-3 rounded-md bg-gray-900 text-white placeholder-gray-400 border border-gray-700 focus:ring focus:ring-orange-500">
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full py-2 mt-4 rounded-md transition-all">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Mention Me -->
+    <div class="mention">
+        Made by Sameer Saini (0xS4iNi [@github])
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

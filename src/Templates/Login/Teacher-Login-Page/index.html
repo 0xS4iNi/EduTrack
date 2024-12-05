@@ -11,6 +11,17 @@
     body {
       font-family: 'Poppins', sans-serif;
     }
+    .mention {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 0.875rem;
+            font-weight: medium;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
   </style>
 </head>
 
@@ -55,9 +66,7 @@
         <!-- ParaMedical Branch -->
         <div id="Paramedical-section" class="hidden ">
           <label for="paramedicalBranch" class="block mb-2 text-white">Select a Paramedical Branch</label>
-          <select id="paramedicalBranch"
-            class="-full mb-4 p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400"
-            required>
+          <select  id="paramedicalBranch" class="-full mb-4 p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
             <option value="" disabled selected>Select the Branch</option>
             <option value="bmrit">BMRIT</option>
             <option value="baott">BAOTT</option>
@@ -79,7 +88,10 @@
       </form>
     </div>
   </div>
+  <div class=" bg-gradient-to-r from-purple-500 to-pink-500 text-white mention ">
+    Made By Sameer Saini (0xS4iNi [@github])
+</div>
+
   <script src="./script.js"></script>
 </body>
-
 </html>
