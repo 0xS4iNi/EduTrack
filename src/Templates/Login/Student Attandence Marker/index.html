@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Marker</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-[#E3F2FD] to-[#E1F5FE] text-gray-800">
+
+    <!-- Container -->
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <!-- Header -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-700 tracking-wide text-center mb-6">
+            Jagannath University
+            <div class="text-2xl mt-2 text-gray-500">
+                Haryana
+            </div>
+        </h1>
+
+        <!-- Form Container -->
+        <div class="bg-gray-100 bg-opacity-90 shadow-xl rounded-lg p-6 sm:p-10 w-80 sm:w-96 border border-gray-200">
+            <form>
+                <!-- Student Name -->
+                <label class="block text-left text-gray-600 font-semibold mb-2" for="studentName">Enter Your
+                    Name:</label>
+                <input
+                    class="w-full rounded-lg p-3 mb-4 bg-gray-200 bg-opacity-80 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                    type="text" name="studentName" id="studentName" placeholder="Your Full Name" required>
+
+                <!-- Roll Number -->
+                <label class="block text-left text-gray-600 font-semibold mb-2" for="rollNo">Enter Your Roll
+                    Number:</label>
+                <input
+                    class="w-full rounded-lg p-3 mb-4 bg-gray-200 bg-opacity-80 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                    type="number" name="rollNo" id="rollNo" placeholder="Your Roll Number" required>
+
+                <!-- Branch -->
+                <label class="block text-left text-gray-600 font-semibold mb-2" for="studentBranch">Select Your
+                    Branch:</label>
+                <select
+                    class="w-full rounded-lg p-3 mb-4 bg-gray-200 bg-opacity-80 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                    name="studentBranch" id="studentBranch" required>
+                    <option value="" disabled selected>Select a Branch</option>
+                    <option value="Paramedical">Paramedical</option>
+                    <option value="B.Pharmacy">B.Pharmacy</option>
+                    <option value="LLB">LLB</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="B.Tech">B.Tech</option>
+                </select>
+                <!-- ParaMedical Branch -->
+                <div id="Paramedical-section" class="hidden ">
+                    <label for="paramedicalBranch" class="block mb-2 text-white">Select a Paramedical Branch</label>
+                    <select id="paramedicalBranch"
+                        class="-full mb-4 p-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400"
+                        required>
+                        <option value="" disabled selected>Select the Branch</option>
+                        <option value="bmrit">BMRIT</option>
+                        <option value="baott">BAOTT</option>
+                        <option value="bmlt">BMLT</option>
+                        <option value="bcvt">BCVT</option>
+                    </select>
+                </div>
+                <!-- Submit Button -->
+                <button
+                    class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 rounded-lg transition duration-200 mt-2 shadow-sm"
+                    type="submit">
+                    Mark Attendance
+                </button>
+            </form>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+
+</html>
